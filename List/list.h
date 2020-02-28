@@ -8,7 +8,9 @@
 #include <string.h>
 #include <stdbool.h>
 
+#ifndef DEFAULT_MAXSIZE
 #define DEFAULT_MAXSIZE 10
+#endif
 
 typedef int ElementType;
 typedef struct listnode {
