@@ -37,6 +37,14 @@ bool stack_isfull(Stack stack) {
 		return false;
 }
 
+// 返回栈当前元素数量
+int stack_size(Stack stack) {
+	if(Stack_exist(stack))
+		return stack->top+1;
+	else
+		return false;
+}
+
 // 入栈（成功返回true）
 bool stack_push(Stack stack,ElementType elem) {
 	if(Stack_exist(stack)&&!(stack_isfull(stack))) {
