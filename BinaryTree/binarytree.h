@@ -1,0 +1,24 @@
+// binarytree.h
+
+#ifndef BINARYTREE_H
+#define BINARYTREE_H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+
+typedef int ElementType;
+typedef struct treenode {
+	ElementType data;
+	struct treenode* right;
+	struct treenode* left;
+} Node;
+typedef Node* TreeNode;
+
+
+bool tree_isempty(TreeNode);
+void tree_traversal(TreeNode,void (*)(TreeNode));
+void tree_clear(TreeNode);
+
+#endif
