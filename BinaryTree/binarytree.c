@@ -10,11 +10,6 @@ bool tree_isempty(TreeNode root) {
 		return true;
 }
 
-// 遍历（遍历过程由函数决定）
-void tree_traverse(TreeNode root,void (*fun)(TreeNode root)) {
-	fun(root);
-}
-
 // 销毁树
 void tree_clear(TreeNode root) {
 	if(root) {

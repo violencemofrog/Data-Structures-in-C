@@ -18,7 +18,10 @@ typedef Node* TreeNode;
 
 
 bool tree_isempty(TreeNode);
-void tree_traversal(TreeNode,void (*)(TreeNode));
+void tree_preordertraverse(TreeNode,void (*)(Node*));
+void tree_inordertraverse(TreeNode,void (*)(Node*));
+void tree_postordertraverse(TreeNode,void (*)(Node*));
+void tree_levelordertraverse(TreeNode,void (*)(Node*));
 void tree_clear(TreeNode);
 
 #endif
